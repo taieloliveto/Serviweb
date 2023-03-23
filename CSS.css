@@ -33,7 +33,6 @@ header nav ul li a img {
    height: 20px;
    width: auto;
 }
-
 .box-white {
     width: 100%;
     background-color: white;
@@ -41,18 +40,15 @@ header nav ul li a img {
     position: absolute;
 }
 .btn.btn-outline-success {
-    border-radius: 15px !important;
-    background-color: #F2F2F2;
-    border-color:#F2F2F2;
+    background-color: white;
+    border-color: white;
 }
 
 .form-control.me-2{
     position: relative;
     height: 50px;
     margin-top: 5px;
-
 }
-
 .tamaño-lupa{
     width: 30px;
     height: auto;
@@ -70,8 +66,65 @@ header nav ul li a img {
     background-color: white !important;
 }
 
-
-
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 200px 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "area1 area1 area1 area1"
+    "area2 area2 area3 area3"
+    "area4 area5 area5 area6";
+  }
+  .grid-item1{
+  }
+  .grid-item2 {
+    text-align: center;
+    grid-area: area2;
+    display: flex;
+    justify-content: center;
+    
+}
+  .LogoGrande {
+    height: 50px;
+    width: auto;
+}
+  .grid-item3 {
+    text-align: center;
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .BotonApp{
+    text-decoration:none;
+    font-weight: 400;
+    font-size: 18px;
+    color:#333333;
+    background: #f76565;
+    border-width: 0px;
+    border-style: solid;
+    border-radius:50px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+}
+.BotonApp:hover{
+    color: white;
+    background-color: #F74646;
+}
+  .grid-item4 {
+    text-align: center;
+    grid-area: area4;
+  }
+  .grid-item5 {
+    text-align: center;
+    grid-area: area5;
+  }
+  .grid-item6 {
+    text-align: center;
+    grid-area: area6;
+  }
 
 header nav.menu ul li a.Ingresar {
    font-weight: 700;
@@ -81,10 +134,14 @@ header nav.menu ul li a.Ingresar {
 
 #carouselExampleSlidesOnly {
     opacity: 50%;
-
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
-
+.carousel-item {
+    height: 500px;
+}
 
 .Fondo1{
     width: 100%;
@@ -121,7 +178,7 @@ div.BoxText {
     z-index: 1;
 }
 .BoxText p{
-    text-align: left;
+    text-align: center;
 }
 div.Espacio{
     height: 50px;
@@ -131,15 +188,7 @@ div.Espacio2{
     height: 200px;
     width: 200px;
 }
-.LogoGrande {
-    margin: 30px;
-    height: 60px;
-    width: auto;
-    padding: 10px 20px 10px 10px;
-    position: absolute;
-    z-index: 0;
-    top: 200px;
-}
+
 p.LogoGrandeMedio{
     text-align: center;
     top: 200px;
@@ -151,28 +200,6 @@ p img.Imagen1{
     z-index: 1;
 }
 p.Imagen1{
-    z-index: 1;
-}
-.BotonApp{
-    text-decoration:none;
-    font-weight: 500;
-    font-size: 20px;
-    color:#333333;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:20px;
-    padding-right:20px;
-    background-color:#FFEAEA;
-    border-color: #F74646;
-    border-width: 2px;
-    border-style: solid;
-    border-radius:50px;
-    height: 70px;
-    padding: 0px 30px;
-    margin : 10px;
-    position: absolute;
-    top: 220px;
-    left: 850px;
     z-index: 1;
 }
 .Subtitulo{
