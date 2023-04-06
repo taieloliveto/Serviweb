@@ -241,8 +241,8 @@ header nav ul li a {
 
 @media (min-width: 701px) {
   .BoxText p {
-    font-size: 20px;
-    color: #353535;
+    font-size: 30px;
+    color: #252525;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -253,7 +253,10 @@ header nav ul li a {
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-gap: 5px;
     row-gap: 15px;
-    grid-template-areas: "area1 area1 area1 area1" "logo logo boton boton" ". texto texto ." ". texto texto . ";
+    grid-template-areas: "area1 area1 area1 area1"
+     "logo logo boton boton"
+      ". texto texto ." 
+      ". texto texto . ";
   }
 }
 .grid-item1 {
@@ -267,7 +270,7 @@ header nav ul li a {
 
 .LogoGrande {
   height: 50px;
-  width: auto;
+  width: auto; 
 }
 
 .grid-item3 {
@@ -289,7 +292,21 @@ header nav ul li a {
   height: 50px;
   width: 250px;
   text-align: center;
+  animation-name: animacion-boton;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
+@keyframes animacion-boton{
+  0%{
+    background-color: #f76565;
+  }
+  50%{
+    background-color: #006EC1;
+  }
+  100%{
+    background-color: #f76565;
+  }
+  }
 
 .BotonApp:hover {
   color: white;
