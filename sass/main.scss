@@ -627,3 +627,42 @@
   #contenedor{
   justify-items: start !important;
   }
+
+  .estructura-perfil {
+    height: 400px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    row-gap: 10px;
+    margin: 10PX 10PX 10PX 10PX;
+    column-gap: 20px;
+    grid-template-areas: 
+    "foto-p descripcion-p"
+    "foto-p clasificacion1-p"
+    "foto-p clasificacion-p";
+    background-color: white;
+    border-radius: 10px;
+    div.foto-lucas{
+        grid-area: foto-p;
+        margin: 25px;
+        border-radius: 10px;
+        }
+    }
+    .descripcion {
+        grid-area: descripcion-p;
+        margin-top: 25px;
+        text-align: justify;
+        margin: 20px 50px 0px 0px;
+    }
+    .clasificacion1{
+        grid-area: clasificacion1-p;
+    }
+    .clasificacion2{
+        grid-area: clasificacion2-p;
+    }
+
+    .redes{
+        display: grid;
+        justify-items: center;
+    }
