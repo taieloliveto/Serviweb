@@ -71,27 +71,6 @@ header nav ul li a {
   background-color: white !important;
 }
 
-@media (max-width: 700px) {
-  .cards-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px;
-    row-gap: 5px;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    grid-template-areas: "texto texto . ." "plomeria electricidad aire albañileria";
-  }
-}
-.cards-grid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 400px;
-  row-gap: 5px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  grid-template-areas: "texto texto texto buscar buscar" "plomeria electricidad aire albañileria limpieza";
-}
-
 .tamaño-lupa2 {
   width: 30px;
   height: auto;
@@ -198,6 +177,119 @@ header nav ul li a {
 .centrar {
   margin: 100px;
 }
+@media (max-width: 700px) {
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 280px !important;
+    row-gap: 5px;
+    grid-template-areas: 
+    "texto texto "
+    "plomeria electricidad"
+    ;
+    .Subtitulo{
+      font-size: 25px;
+    }
+    .Subtitulo2{
+      font-size: 20px;
+    }
+    .estilo-card{
+      width: 180px;
+    }
+    .aire{
+      display: none;
+    }
+    .limpieza{
+      display: none;
+    }
+    .albañileria{
+      display: none;
+    }
+  }
+  .cards-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 280px !important;
+    row-gap: 5px;
+    grid-template-areas: 
+    "texto buscar" 
+    "plomeria electricidad aire albañileria limpieza";
+    .Subtitulo2{
+      font-size: 22px;
+    }
+    .estilo-card{
+      width: 180px;
+    }
+    .aire{
+      display: none;
+    }
+    .limpieza{
+      display: none;
+    }
+    .albañileria{
+      display: none;
+    }
+    .busqueda1{
+      display: none;
+    }
+  }
+  .cards-grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 350px;
+    row-gap: 5px;
+    grid-template-areas: 
+    "title-publicidad title-publicidad" 
+    "publicidad publicidad";
+    .Subtitulo{
+      font-size: 22px;
+    }
+    .txt-publicidad {
+      grid-area: texto-p;
+      text-align: center;
+      width: 300px;
+      padding-top: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .contenedor-publicidad { 
+    grid-area: publicidad;
+    display: flex;
+    background-color: white;
+    border-radius: 5PX;
+    height: 300px;
+    overflow: hidden;
+    }
+    .foto-publicidad {
+     display: none;
+    }
+    .BotonApp {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 18px;
+      color: #333333;
+      background: #f76565;
+      border-width: 0px;
+      border-style: solid;
+      border-radius: 50px;
+      height: 50px;
+      width: 180px;
+      text-align: center;
+      animation-name: animacion-boton;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+.cards-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 400px;
+  row-gap: 5px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  grid-template-areas: "texto texto texto buscar buscar" "plomeria electricidad aire albañileria limpieza";
+}
 
 @media (max-width: 700px) {
   .grid-container {
@@ -205,9 +297,11 @@ header nav ul li a {
     grid-template-rows: 50px 80px 60px 60px !important;
     row-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
+    
     grid-template-areas: "area1 area1 area1" ". logo  ." ". texto  ." ". boton . ";
     -o-object-fit: cover;
        object-fit: cover;
+    overflow: hidden;
   }
   .BoxText {
     font-size: 18px !important;
@@ -215,23 +309,25 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
   }
   .BoxText p {
     text-align: center;
+    overflow: hidden;
   }
   #carouselExampleSlidesOnly {
     opacity: 50%;
     width: 100%;
     position: absolute;
     z-index: -1;
+    overflow: hidden;
   }
   .carousel-item {
     height: 100px;
-  }
-  .cards-grid {
-    scroll-snap-type: x mandatory;
+    overflow: hidden;
   }
 }
+
 #carouselExampleSlidesOnly {
   opacity: 50%;
   width: 100%;
@@ -246,6 +342,7 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
   }
   .grid-container {
     display: grid;
@@ -704,4 +801,4 @@ hr {
 .redes {
   display: grid;
   justify-items: center;
-}/*# sourceMappingURL=main.css.map */
+}
