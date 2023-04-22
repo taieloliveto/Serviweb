@@ -177,73 +177,47 @@ header nav ul li a {
 .centrar {
   margin: 100px;
 }
+
 @media (max-width: 700px) {
-  .cards-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 280px !important;
-    row-gap: 5px;
-    grid-template-areas: 
-    "texto texto "
-    "plomeria electricidad"
-    ;
-    .Subtitulo{
-      font-size: 25px;
-    }
-    .Subtitulo2{
-      font-size: 20px;
-    }
-    .estilo-card{
-      width: 180px;
-    }
-    .aire{
-      display: none;
-    }
-    .limpieza{
-      display: none;
-    }
-    .albañileria{
-      display: none;
-    }
+  .Subtitulo{
+    font-size: 25px;
   }
-  .cards-grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 280px !important;
-    row-gap: 5px;
-    grid-template-areas: 
-    "texto buscar" 
-    "plomeria electricidad aire albañileria limpieza";
-    .Subtitulo2{
-      font-size: 22px;
-    }
-    .estilo-card{
-      width: 180px;
-    }
-    .aire{
-      display: none;
-    }
-    .limpieza{
-      display: none;
-    }
-    .albañileria{
-      display: none;
-    }
-    .busqueda1{
-      display: none;
-    }
+  .Subtitulo2{
+    font-size: 20px;
   }
-  .cards-grid3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 350px;
-    row-gap: 5px;
-    grid-template-areas: 
-    "title-publicidad title-publicidad" 
-    "publicidad publicidad";
-    .Subtitulo{
-      font-size: 22px;
-    }
+  .estilo-card{
+    width: 180px;
+  }
+  .aire{
+    display: none;
+  }
+  .limpieza{
+    display: none;
+  }
+  .albañileria{
+    display: none;
+  }
+  .Subtitulo2{
+    font-size: 22px;
+  }
+  .estilo-card{
+    width: 180px;
+  }
+  .aire{
+    display: none;
+  }
+  .limpieza{
+    display: none;
+  }
+  .albañileria{
+    display: none;
+  }
+  .busqueda1{
+    display: none;
+  }
+  h2.Subtitulo{
+    font-size: 22px;
+  }
     .txt-publicidad {
       grid-area: texto-p;
       text-align: center;
@@ -263,7 +237,7 @@ header nav ul li a {
     .foto-publicidad {
      display: none;
     }
-    .BotonApp {
+    button.BotonApp {
       text-decoration: none;
       font-weight: 400;
       font-size: 18px;
@@ -279,6 +253,35 @@ header nav ul li a {
       animation-duration: 5s;
       animation-iteration-count: infinite;
     }
+}
+
+@media (max-width: 700px) {
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 280px !important;
+    row-gap: 5px;
+    grid-template-areas: 
+    "texto texto "
+    "plomeria electricidad";
+  }
+  .cards-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 280px !important;
+    row-gap: 5px;
+    grid-template-areas: 
+    "texto buscar" 
+    "plomeria electricidad aire albañileria limpieza";
+  }
+  .cards-grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 350px;
+    row-gap: 5px;
+    grid-template-areas: 
+    "title-publicidad title-publicidad" 
+    "publicidad publicidad";
   }
 }
 .cards-grid2 {
